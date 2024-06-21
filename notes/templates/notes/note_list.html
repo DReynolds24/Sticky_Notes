@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Notes List{% endblock %}
+{% block extra_styles %}
+<link rel="stylesheet" href="{% static 'css/notes_style.css' %}">
+{% endblock %}
+{% block content %}
+<h1 class="text-center">Sticky Notes</h1>
+<ul class="list-group">
+    {% for note in notes %}
+        <li class="list-group-item bg-dark text-white">
+            <a href="{% url 'note_detail' note.pk %}" class="text-white">{{ note.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'note_new' %}" class="btn btn-primary mt-3">Create a new note</a>
+{% endblock %}
+
+
+
+

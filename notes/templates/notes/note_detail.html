@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ note.title }}{% endblock %}
+
+{% block content %}
+<h1>{{ note.title }}</h1>
+<p>{{ note.content }}</p>
+<a class="btn btn-primary" href="{% url 'note_edit' note.pk %}">Edit</a>
+<a class="btn btn-danger" href="{% url 'note_delete' note.pk %}">Delete</a>
+<a class="btn btn-secondary" href="{% url 'note_list' %}">Back to list</a>
+{% endblock %}

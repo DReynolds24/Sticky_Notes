@@ -1,0 +1,62 @@
+/* Styles for the Sticky Notes application */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #1abc9c; /* Turquoise */
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;
+    border: none;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #1abc9c;
+    border-color: #16a085;
+}
+
+.btn-secondary {
+    background-color: #555;
+    border-color: #444;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #c0392b;
+}
+
+.form-control {
+    background-color: #555;
+    border: none;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #666;
+    color: white;
+}
+
+label {
+    color: #1abc9c;
+}
+
+a {
+    color: #1abc9c;
+}
+
+a:hover {
+    color: #16a085;
+}

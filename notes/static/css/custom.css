@@ -1,0 +1,16 @@
+body {
+    background-color: #343a40; /* Grey background */
+    color: #ffffff; /* White text */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #40e0d0; /* Turquoise color */
+}
+
+a {
+    color: #40e0d0; /* Turquoise color */
+}
+
+a:hover {
+    color: #20b2aa; /* Darker turquoise */
+}

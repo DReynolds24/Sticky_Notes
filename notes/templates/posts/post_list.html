@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Posts List{% endblock %}
+{% block extra_styles %}
+<link rel="stylesheet" href="{% static 'css/posts_style.css' %}">
+{% endblock %}
+{% block content %}
+<h2>Posts</h2>
+<a href="{% url 'post_new' %}" class="btn btn-primary">Create New Post</a>
+<ul>
+    {% for post in posts %}
+        <li>
+            <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
+            <a href="{% url 'post_edit' post.pk %}" class="btn btn-secondary">Edit</a>
+            <a href="{% url 'post_delete' post.pk %}" class="btn btn-danger">Delete</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+
+
+
+
